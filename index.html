@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы PHP</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <body>
+        <table id="firstTable">
+        <thead>
+            <tr>
+                <th>
+                    <strong>A</strong>
+                </th>
+                <th>
+                    <strong>B</strong>
+                </th>
+                <th>
+                    <strong>!A</strong>
+                </th>
+                <th>
+                    <strong>A || B</strong>
+                </th>
+                <th>
+                    <strong>A && B</strong>
+                </th>
+                <th>
+                    <strong>A xor B</strong>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="firstRow"><strong>0</strong></td>
+                <td id="firstRow"><strong>0</strong></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>0</strong></td>
+                <td id="firstRow"><strong>1</strong></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>1</strong></td>
+                <td id="firstRow"><strong>0</strong></td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>1</strong></td>
+                <td id="firstRow"><strong>1</strong></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        </table>
+    <br>
+        <table id="secondTable">
+        <thead>
+            <tr>
+                <th>
+                    <strong></strong>
+                </th>
+                <th>
+                    <strong>true</strong>
+                </th>
+                <th>
+                    <strong>false</strong>
+                </th>
+                <th>
+                    <strong>1</strong>
+                </th>
+                <th>
+                    <strong>0</strong>
+                </th>
+                <th>
+                    <strong>-1</strong>
+                </th>
+                <th>
+                    <strong>"1"</strong>
+                </th>
+                <th>
+                    <strong>null</strong>
+                </th>
+                <th>
+                    <strong>"php"</strong>
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="firstRow"><strong>true</strong></td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>false</strong></td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->flase</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>1</strong></td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>0</strong></td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>-1</strong></td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>"1"</strong></td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>null</strong></td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+            </tr>
+            <tr>
+                <td id="firstRow"><strong>"php"</strong></td>
+                <td><?php echo $pageData->true</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->false</td>
+                <td><?php echo $pageData->true</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><p>
+</body>
+</html>
